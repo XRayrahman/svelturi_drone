@@ -144,7 +144,7 @@
   <div class="h-80 xl:h-96 w-screen sm:pl-44">
     <Map
       accessToken="pk.eyJ1IjoicmFpemVueCIsImEiOiJjbDkycXFnbm4wem93M3VwbWkzNzNhcGoyIn0.N9D8kRk7KmBfZQ7JVAuGtg"
-      style="mapbox://styles/mapbox/navigation-night-v1"
+      style="mapbox://styles/raizenx/cl17iz8j2001n14popa20rw7i"
       bind:center
       bind:zoom
       on:ready={onReady}
