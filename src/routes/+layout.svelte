@@ -1,8 +1,11 @@
 <script>
   import "../app.css";
+  // import "./database/+page.svelte";
+
   let isDropdownOpen = false; // default state (dropdown close)
   let isChangeType = false;
-  let isSSH = false;
+  let isSSH = false; // Import the functions you need from the SDKs you need
+
   const handleDropdownClick = () => {
     isDropdownOpen = !isDropdownOpen; // togle state on click
   };
@@ -43,7 +46,7 @@
         <div class="flex flex-wrap items-center ">
           <div class="items-center xl:hidden">
             <button
-              class="hover:bg-slate-100 hover:border-gray-100 font-medium rounded-lg text-sm w-15 text-center inline-flex items-center dark:text-white dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="hover:bg-slate-100 hover:border-gray-100 text-black-700 font-medium rounded-lg text-sm w-15 text-center inline-flex items-center dark:text-white dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               type="button"
               on:click={handleDropdownClick}
             >
@@ -231,10 +234,8 @@
       </div>
     </nav>
   </header>
-  <slot />
-  <footer
-    class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900"
-  >
+  <slot class="bg-white" />
+  <footer class="p-4 bg-white  shadow md:px-6 md:py-8 dark:bg-gray-900">
     <div class="sm:flex sm:items-center sm:justify-between">
       <a href="https://github.com/XRayrahman" class="flex items-center">
         <img
